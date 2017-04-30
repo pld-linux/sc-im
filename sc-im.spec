@@ -8,12 +8,12 @@ Group:		Applications/Math
 Source0:	https://github.com/andmarti1424/sc-im/archive/v%{version}.zip
 # Source0-md5:	2c81f2a6e0cb24b88ff7a2daa7bc585e
 URL:		https://github.com/andmarti1424/sc-im
+BuildRequires:	libxml2-devel
+BuildRequires:	libzip-devel
 BuildRequires:	lua51-devel
-#BuildRequires:	libxml-devel
-#BuildRequires:	libzip-devel
-#BuildRequires:	lxlsreader-devel
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	yacc
+#BuildRequires:	xlsreader-devel
 #BuildRequires:	xlsxwriter-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
