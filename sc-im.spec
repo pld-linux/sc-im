@@ -39,8 +39,8 @@ tesktowej, często bazując na wartościach innych komórek (formuła).
 %setup -q
 
 %build
+CFLAGS="%{rpmcflags}" \
 %{__make} -C src \
-	CFLAGS="%{rpmcflags}" \
 	prefix=%{_prefix}
 
 %install
