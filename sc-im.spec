@@ -39,13 +39,16 @@ tesktowej, często bazując na wartościach innych komórek (formuła).
 %setup -q
 
 %build
-%{__make} -C src
+%{__make} -C src \
+	CFLAGS="%{rpmcflags}" \
+	prefix=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} -C src install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	prefix=%{_prefix}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
