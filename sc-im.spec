@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc BUGS CHANGES HELP KNOWN_ISSUES LICENSE Readme.md USER_REQUESTS WIKI *.png
-%attr(755,root,root) %{_bindir}/%{name}
-%{_datadir}/%{name}
-%{_mandir}/man1/%{name}.1*
+%attr(755,root,root) %{_bindir}/scim
+%{_datadir}/scim
+%{_mandir}/man1/scim.1*
