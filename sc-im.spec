@@ -39,12 +39,12 @@ tesktowej, często bazując na wartościach innych komórek (formuła).
 %setup -q
 
 %build
-%{__make}
+%{__make} -C src
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} -C src install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
