@@ -2,7 +2,7 @@ Summary:	Sc is a free curses-based spreadsheet program that uses key bindings si
 Summary(pl.UTF-8):	Sc jest darmowym, bazującym na curses arkuszem kalkulacyjnym, uzywającym skrótów klawiszowych podobnych do vi oraz less
 Name:		sc-im
 Version:	0.6.0
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Applications/Math
 Source0:	https://github.com/andmarti1424/sc-im/archive/v%{version}.zip
